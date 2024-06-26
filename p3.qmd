@@ -3,4 +3,8 @@ title: "page3"
 format: html
 ---
 
+The ages of the patients in this study ranged from 60 to 90, and the following
+graph reveals the consistency of the findings of the main graph across all ages
+present in this study.
+
 ![](http://127.0.0.1:37381/graphics/6120555b-1434-49a4-a0c6-6697f8a3955c.png)

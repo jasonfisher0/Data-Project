@@ -10,6 +10,7 @@ website:
         text: Home
       - about.qmd
       - p2.qmd
+      - p3.qmd
 
 format:
   html:

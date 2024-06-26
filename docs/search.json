@@ -5,5 +5,12 @@
     "title": "Alzheimer’s Disease (AD) Versus Functional Assessment Score",
     "section": "",
     "text": "Alzheimer’s disease affects more than 6 million Americans, and is ranked the 7th leading cause of death in the United States. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer’s disease. Then, the variables used to achieve my conclusion were selected and stratified by whether or not the patient was diagnosed with Alzheimer’s. Those who have Alzheimer’s exhibit significantly decreased physical and mental function than those who do not."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My email: jasonfisher2025@gmail.com\nMy GitHub repo for this project: https://github.com/jasonfisher0/Data-Project\nCourse homepage: https://bootcamp.davidkane.info"
   }
 ]
