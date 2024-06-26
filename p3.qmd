@@ -5,9 +5,7 @@ execute:
   echo: false
 ---
 
-The ages of the patients in this study ranged from 60 to 90, and the following
-graph reveals the consistency of the findings of the main graph across all ages
-present in this study.
+The ages of the patients in this study ranged from 60 to 90. The continuous age variable was dichotomized, <75 vs. >= 75.The amount of people younger than 75 and those above 75 was approximately equal. The following graph shows the percentage of those with Alzheimer's is similar across age for lower functioning patients and for higher functioning patients. 
 
 
 ```{r}

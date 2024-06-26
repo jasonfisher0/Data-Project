@@ -1,0 +1,87 @@
+---
+title: "Conclusion"
+format: html
+execute: 
+  echo: false
+  warning: false
+---
+There appears to threshold physical function score that discriminates between high and low prevalence of Alzheimer's Disease. A possible reason for the sharp drop in percentage of people with Alzheimer's after the 4-5 bin could be due to the design of the functional assessment test. The criteria for scores greater than 5 could be significantly more difficult for an individual with Alzheimer's disease to meet than those of scores less than 5.
+
+In conclusion, higher functional assessment scores correlated with lower percentages of patients with Alzheimer's disease and lower functional assessment scores correlated with higher percentages of patients with Alzheimer's disease.
+
+```{r}
+# Suppress package startup messages
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(plotly)
+})
+
+# Load the dataset
+data <- read.csv("alzheimers_disease_data.csv")
+
+# Define the bins for FunctionalAssessment
+bins <- c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+# Create a new column for the binned FunctionalAssessment
+data <- data %>%
+  mutate(FunctionalAssessmentGroup = cut(FunctionalAssessment, bins, include.lowest = TRUE, right = FALSE, labels = paste0(bins[-length(bins)], "-", bins[-1])))
+
+# Map Gender values to labels
+data$Gender <- as.character(data$Gender)
+data$Gender[data$Gender == "0"] <- "Male"
+data$Gender[data$Gender == "1"] <- "Female"
+
+# Create AgeGroup column and map values to labels
+data <- data %>%
+  mutate(AgeGroup = ifelse(Age >= 75, "75 years and above", "Below 75 years"))
+
+# Summarize the percentage with AD by functional assessment groups
+data_by_score <- data %>%
+  group_by(FunctionalAssessmentGroup) %>%
+  summarise(PercentWithAD = mean(Diagnosis == 1) * 100, .groups = 'drop')
+
+# Summarize the percentage with AD by gender and functional assessment groups
+data_by_gender <- data %>%
+  group_by(FunctionalAssessmentGroup, Gender) %>%
+  summarise(PercentWithAD = mean(Diagnosis == 1) * 100, .groups = 'drop')
+
+# Summarize the percentage with AD by age group and functional assessment groups
+data_by_age <- data %>%
+  group_by(FunctionalAssessmentGroup, AgeGroup) %>%
+  summarise(PercentWithAD = mean(Diagnosis == 1) * 100, .groups = 'drop')
+
+# Create the interactive histogram
+fig <- plot_ly()
+
+# Add the overall histogram
+fig <- fig %>% add_trace(data = data_by_score, x = ~FunctionalAssessmentGroup, y = ~PercentWithAD, type = 'bar', name = 'Overall', marker = list(color = '#9467bd')) # purple
+
+# Add the gender histogram for Female
+fig <- fig %>% add_trace(data = data_by_gender %>% filter(Gender == "Female"), x = ~FunctionalAssessmentGroup, y = ~PercentWithAD, type = 'bar', name = 'Female', marker = list(color = '#ff7f0e')) # orange
+
+# Add the gender histogram for Male
+fig <- fig %>% add_trace(data = data_by_gender %>% filter(Gender == "Male"), x = ~FunctionalAssessmentGroup, y = ~PercentWithAD, type = 'bar', name = 'Male', marker = list(color = '#1f77b4')) # blue
+
+# Add the age group histogram for 75 years and above
+fig <- fig %>% add_trace(data = data_by_age %>% filter(AgeGroup == "75 years and above"), x = ~FunctionalAssessmentGroup, y = ~PercentWithAD, type = 'bar', name = '75 years and above', marker = list(color = '#2ca02c')) # green
+
+# Add the age group histogram for Below 75 years
+fig <- fig %>% add_trace(data = data_by_age %>% filter(AgeGroup == "Below 75 years"), x = ~FunctionalAssessmentGroup, y = ~PercentWithAD, type = 'bar', name = 'Below 75 years', marker = list(color = '#d62728')) # red
+
+# Customize the layout
+fig <- fig %>% layout(title = 'Percent of People with Alzheimer\'s Disease by Functional Assessment Score',
+                      xaxis = list(title = 'Functional Assessment Score'),
+                      yaxis = list(title = 'Percent with AD'),
+                      barmode = 'group',
+                      legend = list(title = list(text = 'Legend')))
+
+# Show the plot
+fig
+
+```
+
+
+
+
+
+A possible reason for the sharp drop in percentage of people with Alzheimer's after the 4-5 bin could be due to the design of the functional assessment test. The criteria for scores greater than 5 could be significantly more difficult for an individual with Alzheimer's disease to meet than those of scores less than 5.

@@ -1,8 +1,8 @@
 {
-  "hash": "d3ff403a33004440139e680391b69725",
+  "hash": "6278a8523820391dd086d09decbb8a9f",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Gender\"\nformat: html\nexecute:\n  echo: false\n---\n\n::: {.cell}\n::: {.cell-output-display}\n![](p2_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Gender\"\nformat: html\nexecute:\n  echo: false\n---\n\nThe following graph shows that the percentage of patients with Alzheimer's Disease for males and females across all functional assessment scores is similar to the base plot that doesn't include gender.\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](p2_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
     "supporting": [
       "p2_files"
     ],

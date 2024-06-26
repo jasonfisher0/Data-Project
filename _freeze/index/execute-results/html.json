@@ -1,8 +1,8 @@
 {
-  "hash": "949d90cbd22138fe98395e2aa742616a",
+  "hash": "0552a330ed67a86b3004598a48056df3",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Base Plot\"\nexecute: \n  echo: false\n---\n\n\nAlzheimer's disease affects more than 6 million Americans, and is ranked the 7th leading cause of death in the United States. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer's disease. Then, the variables used to achieve my conclusion were selected and stratified by whether or not the patient was diagnosed with Alzheimer's. Those who have Alzheimer's exhibit significantly decreased physical and mental function than those who do not.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n\n\n\n\nMy email: jasonfisher2025@gmail.com\n\nMy GitHub repo for this project: <https://github.com/jasonfisher0/Data-Project>\n\nCourse homepage: <https://bootcamp.davidkane.info>",
+    "markdown": "---\ntitle: \"Base Plot\"\nexecute: \n  echo: false\n---\n\n\nAlzheimer's disease is ranked the 7th leading cause of death in the United States and affects more than 6 million Americans. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer's disease. The variables used in these analyses were chosen to examine the association between Alzheimer's and physical functioning. The plots on the succeeding pages explore the validity of the \"base plot\" by acknowledging the potential confounding variables of age and gender. Overall there appears to be a strong association between and Alzheimer's and physical function. People with lower physical function had higher percentages of Alzheimer's disease.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n\n\n\n\nMy email: jasonfisher2025@gmail.com\n\nMy GitHub repo for this project: <https://github.com/jasonfisher0/Data-Project>\n\nCourse homepage: <https://bootcamp.davidkane.info>",
     "supporting": [
       "index_files"
     ],

@@ -4,6 +4,8 @@ format: html
 execute:
   echo: false
 ---
+The following graph shows that the percentage of patients with Alzheimer's Disease for males and females across all functional assessment scores is similar to the base plot that doesn't include gender.
+
 
 ```{r}
 # Load necessary libraries and suppress package startup messages
@@ -27,11 +29,15 @@ data_summary <- data %>%
 # Create the plot
 ggplot(data_summary, aes(x = FunctionalAssessment, y = Percentage_with_AD, fill = factor(Gender))) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Percent of People with Alzheimer's by gender",
+  labs(title = "Percent AD",
        x = "Functional Assessment Score",
        y = "Percentage with AD",
        fill = "Gender") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
-  scale_y_continuous(limits = c(0, 100))
+  scale_y_continuous(limits = c(0, 100)) +
+  scale_fill_manual(values = c("0" = "blue", "1" = "pink"), labels = c("0" = "Male", "1" = "Female"))
+
 ```
+
+

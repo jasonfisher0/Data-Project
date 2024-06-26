@@ -4,7 +4,7 @@ execute:
   echo: false
 ---
 
-Alzheimer's disease affects more than 6 million Americans, and is ranked the 7th leading cause of death in the United States. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer's disease. Then, the variables used to achieve my conclusion were selected and stratified by whether or not the patient was diagnosed with Alzheimer's. Those who have Alzheimer's exhibit significantly decreased physical and mental function than those who do not.
+Alzheimer's disease is ranked the 7th leading cause of death in the United States and affects more than 6 million Americans. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer's disease. The variables used in these analyses were chosen to examine the association between Alzheimer's and physical functioning. The plots on the succeeding pages explore the validity of the "base plot" by acknowledging the potential confounding variables of age and gender. Overall there appears to be a strong association between and Alzheimer's and physical function. People with lower physical function had higher percentages of Alzheimer's disease.
 
 ```{r}
 library(ggplot2)

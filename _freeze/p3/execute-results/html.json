@@ -1,8 +1,8 @@
 {
-  "hash": "566942d4a009bbdf64e28e1cada2ac25",
+  "hash": "70ac1daddf92ba384f8c3fcdb09377ba",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Age\"\nformat: html\nexecute:\n  echo: false\n---\n\n\nThe ages of the patients in this study ranged from 60 to 90, and the following\ngraph reveals the consistency of the findings of the main graph across all ages\npresent in this study.\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](p3_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Age\"\nformat: html\nexecute:\n  echo: false\n---\n\n\nThe ages of the patients in this study ranged from 60 to 90. The continuous age variable was dichotomized, <75 vs. >= 75.The amount of people younger than 75 and those above 75 was approximately equal. The following graph shows the percentage of those with Alzheimer's is similar across age for lower functioning patients and for higher functioning patients. \n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](p3_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
     "supporting": [
       "p3_files"
     ],
