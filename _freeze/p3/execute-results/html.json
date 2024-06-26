@@ -1,0 +1,17 @@
+{
+  "hash": "566942d4a009bbdf64e28e1cada2ac25",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Age\"\nformat: html\nexecute:\n  echo: false\n---\n\n\nThe ages of the patients in this study ranged from 60 to 90, and the following\ngraph reveals the consistency of the findings of the main graph across all ages\npresent in this study.\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](p3_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "p3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

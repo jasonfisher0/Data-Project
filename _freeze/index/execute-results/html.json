@@ -1,0 +1,17 @@
+{
+  "hash": "949d90cbd22138fe98395e2aa742616a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Base Plot\"\nexecute: \n  echo: false\n---\n\n\nAlzheimer's disease affects more than 6 million Americans, and is ranked the 7th leading cause of death in the United States. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer's disease. Then, the variables used to achieve my conclusion were selected and stratified by whether or not the patient was diagnosed with Alzheimer's. Those who have Alzheimer's exhibit significantly decreased physical and mental function than those who do not.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n\n\n\n\nMy email: jasonfisher2025@gmail.com\n\nMy GitHub repo for this project: <https://github.com/jasonfisher0/Data-Project>\n\nCourse homepage: <https://bootcamp.davidkane.info>",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

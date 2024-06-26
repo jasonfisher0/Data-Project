@@ -1,0 +1,17 @@
+{
+  "hash": "d3ff403a33004440139e680391b69725",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Gender\"\nformat: html\nexecute:\n  echo: false\n---\n\n::: {.cell}\n::: {.cell-output-display}\n![](p2_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "p2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
