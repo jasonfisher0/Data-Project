@@ -1,5 +1,5 @@
 ---
-title: "Alzheimer's Disease (AD) Versus Functional Assessment Score"
+title: "Base Plot"
 execute: 
   echo: false
 ---
@@ -24,3 +24,14 @@ ggplot(data, aes(x = FunctionalAssessment, y = Percent_AD)) +
     scale_y_continuous(limits = c(0, 100))
 
 ```
+
+
+
+
+
+
+My email: jasonfisher2025@gmail.com
+
+My GitHub repo for this project: <https://github.com/jasonfisher0/Data-Project>
+
+Course homepage: <https://bootcamp.davidkane.info>

@@ -1,10 +1,17 @@
 [
   {
+    "objectID": "p3.html",
+    "href": "p3.html",
+    "title": "Age",
+    "section": "",
+    "text": "The ages of the patients in this study ranged from 60 to 90, and the following graph reveals the consistency of the findings of the main graph across all ages present in this study."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Alzheimer’s Disease (AD) Versus Functional Assessment Score",
+    "title": "Base Plot",
     "section": "",
-    "text": "Alzheimer’s disease affects more than 6 million Americans, and is ranked the 7th leading cause of death in the United States. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer’s disease. Then, the variables used to achieve my conclusion were selected and stratified by whether or not the patient was diagnosed with Alzheimer’s. Those who have Alzheimer’s exhibit significantly decreased physical and mental function than those who do not."
+    "text": "Alzheimer’s disease affects more than 6 million Americans, and is ranked the 7th leading cause of death in the United States. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer’s disease. Then, the variables used to achieve my conclusion were selected and stratified by whether or not the patient was diagnosed with Alzheimer’s. Those who have Alzheimer’s exhibit significantly decreased physical and mental function than those who do not.\n\n\n\n\n\n\n\n\n\nMy email: jasonfisher2025@gmail.com\nMy GitHub repo for this project: https://github.com/jasonfisher0/Data-Project\nCourse homepage: https://bootcamp.davidkane.info"
   },
   {
     "objectID": "about.html",

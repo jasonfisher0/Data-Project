@@ -1,7 +1,37 @@
 ---
-title: "page2"
+title: "Gender"
 format: html
+execute:
+  echo: false
 ---
 
+```{r}
+# Load necessary libraries and suppress package startup messages
+suppressPackageStartupMessages({
+  library(ggplot2)
+  library(dplyr)
+})
 
-![](http://127.0.0.1:37381/graphics/3f255518-1f4c-4835-8bfc-dd4dada92024.png)
+# Load the data
+data <- read.csv("alzheimers_disease_data.csv")
+
+# Create a new column for Functional Assessment Score ranges
+data <- data %>%
+  mutate(FunctionalAssessment = cut(ADL, breaks = seq(0, 10, by = 1), labels = c('0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', '9-10'), include.lowest = TRUE))
+
+# Group by Functional Assessment Score ranges and Gender and calculate the percentage with AD
+data_summary <- data %>%
+  group_by(FunctionalAssessment, Gender) %>%
+  summarize(Percentage_with_AD = mean(Diagnosis) * 100, .groups = 'drop')
+
+# Create the plot
+ggplot(data_summary, aes(x = FunctionalAssessment, y = Percentage_with_AD, fill = factor(Gender))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Percent of People with Alzheimer's by gender",
+       x = "Functional Assessment Score",
+       y = "Percentage with AD",
+       fill = "Gender") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  scale_y_continuous(limits = c(0, 100))
+```
