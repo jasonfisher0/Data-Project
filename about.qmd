@@ -1,0 +1,10 @@
+---
+title: "About"
+---
+
+
+My email: jasonfisher2025@gmail.com
+
+My GitHub repo for this project: <https://github.com/jasonfisher0/Data-Project>
+
+Course homepage: <https://bootcamp.davidkane.info>

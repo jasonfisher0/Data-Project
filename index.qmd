@@ -1,0 +1,26 @@
+---
+title: "Alzheimer's Disease (AD) Versus Functional Assessment Score"
+execute: 
+  echo: false
+---
+
+Alzheimer's disease affects more than 6 million Americans, and is ranked the 7th leading cause of death in the United States. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer's disease. Then, the variables used to achieve my conclusion were selected and stratified by whether or not the patient was diagnosed with Alzheimer's. Those who have Alzheimer's exhibit significantly decreased physical and mental function than those who do not.
+
+```{r}
+library(ggplot2)
+
+data <- data.frame(
+  FunctionalAssessment = c('0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', '9-10'),
+  Percent_AD = c(55.71, 58.33, 53.44, 57.11, 52.1, 18.69, 15.67, 14.16, 15.35, 16.1)
+)
+
+ggplot(data, aes(x = FunctionalAssessment, y = Percent_AD)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  theme_minimal() +
+  labs(title = "Percent AD",
+       x = "Functional Assessment Score",
+       y = "Percentage with AD") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+    scale_y_continuous(limits = c(0, 100))
+
+```
