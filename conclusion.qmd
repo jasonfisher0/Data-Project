@@ -79,9 +79,3 @@ fig <- fig %>% layout(title = 'Percent of People with Alzheimer\'s Disease by Fu
 fig
 
 ```
-
-
-
-
-
-A possible reason for the sharp drop in percentage of people with Alzheimer's after the 4-5 bin could be due to the design of the functional assessment test. The criteria for scores greater than 5 could be significantly more difficult for an individual with Alzheimer's disease to meet than those of scores less than 5.

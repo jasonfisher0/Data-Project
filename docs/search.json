@@ -4,14 +4,14 @@
     "href": "p3.html",
     "title": "Age",
     "section": "",
-    "text": "The ages of the patients in this study ranged from 60 to 90, and the following graph reveals the consistency of the findings of the main graph across all ages present in this study."
+    "text": "The ages of the patients in this study ranged from 60 to 90. The continuous age variable was dichotomized, &lt;75 vs. &gt;= 75.The amount of people younger than 75 and those above 75 was approximately equal. The following graph shows the percentage of those with Alzheimer’s is similar across age for lower functioning patients and for higher functioning patients."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Base Plot",
     "section": "",
-    "text": "Alzheimer’s disease affects more than 6 million Americans, and is ranked the 7th leading cause of death in the United States. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer’s disease. Then, the variables used to achieve my conclusion were selected and stratified by whether or not the patient was diagnosed with Alzheimer’s. Those who have Alzheimer’s exhibit significantly decreased physical and mental function than those who do not.\n\n\n\n\n\n\n\n\n\nMy email: jasonfisher2025@gmail.com\nMy GitHub repo for this project: https://github.com/jasonfisher0/Data-Project\nCourse homepage: https://bootcamp.davidkane.info"
+    "text": "Alzheimer’s disease is ranked the 7th leading cause of death in the United States and affects more than 6 million Americans. The following data was sourced from a Kaggle dataset that focused on the broad topic of Alzheimer’s disease. The variables used in these analyses were chosen to examine the association between Alzheimer’s and physical functioning. The plots on the succeeding pages explore the validity of the “base plot” by acknowledging the potential confounding variables of age and gender. Overall there appears to be a strong association between and Alzheimer’s and physical function. People with lower physical function had higher percentages of Alzheimer’s disease.\n\n\n\n\n\n\n\n\n\nMy email: jasonfisher2025@gmail.com\nMy GitHub repo for this project: https://github.com/jasonfisher0/Data-Project\nCourse homepage: https://bootcamp.davidkane.info"
   },
   {
     "objectID": "about.html",
@@ -19,5 +19,19 @@
     "title": "About",
     "section": "",
     "text": "My email: jasonfisher2025@gmail.com\nMy GitHub repo for this project: https://github.com/jasonfisher0/Data-Project\nCourse homepage: https://bootcamp.davidkane.info"
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "There appears to threshold physical function score that discriminates between high and low prevalence of Alzheimer’s Disease. A possible reason for the sharp drop in percentage of people with Alzheimer’s after the 4-5 bin could be due to the design of the functional assessment test. The criteria for scores greater than 5 could be significantly more difficult for an individual with Alzheimer’s disease to meet than those of scores less than 5.\nIn conclusion, higher functional assessment scores correlated with lower percentages of patients with Alzheimer’s disease and lower functional assessment scores correlated with higher percentages of patients with Alzheimer’s disease."
+  },
+  {
+    "objectID": "p2.html",
+    "href": "p2.html",
+    "title": "Gender",
+    "section": "",
+    "text": "The following graph shows that the percentage of patients with Alzheimer’s Disease for males and females across all functional assessment scores is similar to the base plot that doesn’t include gender."
   }
 ]
